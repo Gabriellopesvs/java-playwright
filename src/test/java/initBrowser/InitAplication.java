@@ -13,7 +13,7 @@ public class InitAplication {
         Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setChannel("chrome").setArgs(Arrays.asList("--start-fullscreen")));
         BrowserContext context = browser.newContext(new Browser.NewContextOptions().setViewportSize(1920, 1080));
         page = context.newPage();
-        page.navigate(url);
+        page.navigate(url, new Page.NavigateOptions().setTimeout(60000));
         System.out.println(page.title());
     }
 
