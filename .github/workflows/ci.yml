@@ -25,5 +25,8 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
 
+    - name: Install Playwright Browsers
+      run: mvn exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install"
+
     - name: Run tests
       run: mvn test
