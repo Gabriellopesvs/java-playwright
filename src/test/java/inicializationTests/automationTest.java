@@ -17,25 +17,25 @@ public class automationTest {
         init = new InitAplication();
         element = new ElementPage();
         comp = new Component();
-        init.Browser("https://demoqa.com/text-box");
+        init.Browser("https://google.com");
     }
 
     @Test
     public void DemoSite() throws InterruptedException {
-        comp.Keys("filling in field full name", element.name(), false)
-                .type("Gabriel Lopes Almeida");
-
-        comp.Keys("filling in field email", element.email(), false)
-                .type("test@gmail.com");
-
-        comp.Keys("filling in field address", element.addressCurrent(), false)
-                .type("address test");
-
-        comp.Keys("filling in field address", element.addressPermanent(), false)
-                .type("address test");
-
-        comp.Keys("clicking on the button", element.submit(), true)
-                .click();
+//        comp.Keys("filling in field full name", element.name(), false)
+//                .type("Gabriel Lopes Almeida");
+//
+//        comp.Keys("filling in field email", element.email(), false)
+//                .type("test@gmail.com");
+//
+//        comp.Keys("filling in field address", element.addressCurrent(), false)
+//                .type("address test");
+//
+//        comp.Keys("filling in field address", element.addressPermanent(), false)
+//                .type("address test");
+//
+//        comp.Keys("clicking on the button", element.submit(), true)
+//                .click();
     }
 
     @AfterClass

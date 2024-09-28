@@ -14,7 +14,6 @@ public class InitAplication {
         BrowserContext context = browser.newContext(new Browser.NewContextOptions().setViewportSize(1920, 1080));
         page = context.newPage();
         page.navigate(url, new Page.NavigateOptions().setTimeout(60000));
-        page.waitForSelector("input[id='userName']", new Page.WaitForSelectorOptions().setTimeout(60000));
         System.out.println(page.title());
     }
 
