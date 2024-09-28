@@ -1,0 +1,4 @@
+pageObject/Component.class
+inicializationTests/automationTest.class
+initBrowser/InitAplication.class
+pageObject/ElementPage.class

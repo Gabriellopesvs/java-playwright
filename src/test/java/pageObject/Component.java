@@ -2,9 +2,8 @@ package pageObject;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
-import org.junit.Before;
-
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.Paths;
 
 import static initBrowser.InitAplication.page;
@@ -19,6 +18,7 @@ public class Component {
         if (screenshots){
             this.screenshots(action);
         }
+        Thread.sleep( 3000);
         return page.locator(element);
     }
 
